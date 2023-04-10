@@ -1,7 +1,4 @@
 {
-  "dependencies": {
-    "flowbite": "^1.6.3"
-  },
   "name": "hiret",
   "description": "",
   "version": "1.0.0",
