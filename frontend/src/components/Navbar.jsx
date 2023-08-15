@@ -33,7 +33,7 @@ const Navbar = () => {
     console.log("handled successfully");
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/users/signin",
+        "https://hiret-ltd.onrender.com/api/users/signin",
         {
           email,
           password,
@@ -55,7 +55,7 @@ const Navbar = () => {
     console.log("handled successfully");
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/college/signin",
+        "https://hiret-ltd.onrender.com/api/college/signin",
         {
           email,
           password,

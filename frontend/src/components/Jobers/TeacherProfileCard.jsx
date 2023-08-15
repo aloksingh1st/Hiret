@@ -16,7 +16,7 @@ const TeacherProfileCard = (props) => {
   const userId = props.id;
 
     const fetchData = () => {
-      fetch(`http://localhost:3000/api/users/find/${userId}`)
+      fetch(`https://hiret-ltd.onrender.com/api/users/find/${userId}`)
       .then(response => response.json())
       .then(data => {setUser(data)
         console.log(data);

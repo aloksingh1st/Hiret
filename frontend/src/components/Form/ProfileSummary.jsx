@@ -26,7 +26,7 @@ const ProfileSummary = (props) => {
     console.log("handled successfully");
     try {
       const { data } = await axios.put(
-        `http://localhost:3000/api/users/updateProfile/${props.id}`,
+        `https://hiret-ltd.onrender.com/api/users/updateProfile/${props.id}`,
         {
           profileSummary,
         }
@@ -46,7 +46,7 @@ const ProfileSummary = (props) => {
     console.log("handled2 successfully");
     try {
       const { data } = await axios.post(
-        `http://localhost:3000/api/college/createJob`,
+        `https://hiret-ltd.onrender.com/api/college/createJob`,
         {
           details,
         }

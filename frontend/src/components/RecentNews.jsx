@@ -11,7 +11,7 @@ const RecentNews = () => {
 
 
     const getNextCustID = () => {
-        fetch("http://localhost:3000/api/college/news")
+        fetch("https://hiret-ltd.onrender.com/api/college/news")
           .then((response) => {
             // console.log("Success");
             setAns(response.data);

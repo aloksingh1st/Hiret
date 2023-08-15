@@ -13,7 +13,7 @@ const RecentJobs = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        `http://localhost:3000/api/college/getjobs?page=${currentPage}&limit=${limit}`
+        `https://hiret-ltd.onrender.com/api/college/getjobs?page=${currentPage}&limit=${limit}`
       );
       setUsers(response.data);
     }

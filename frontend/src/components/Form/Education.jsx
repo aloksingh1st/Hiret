@@ -29,7 +29,7 @@ const Education = (props) => {
     console.log("handled successfully");
     try {
       const { data } = await axios.put(
-        `http://localhost:3000/api/users/updateProfile/${props.id}`,
+        `https://hiret-ltd.onrender.com/api/users/updateProfile/${props.id}`,
         {
             qualifications,
             specializations,

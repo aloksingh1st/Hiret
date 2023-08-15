@@ -41,7 +41,7 @@ function JobStepper() {
     try {
       console.log("trying ");
       const { data } = await axios.post(
-        `http://localhost:3000/api/college/createJob`,
+        `https://hiret-ltd.onrender.com/api/college/createJob`,
         {...jobData}
         );
 

@@ -21,7 +21,7 @@ const MainJobPage = () => {
     e.preventDefault();
 
     const response = await axios.get(
-      `http://localhost:3000/api/users/search?q=${query}`
+      `https://hiret-ltd.onrender.com/api/users/search?q=${query}`
     );
     setResults(response.data);
     console.log(results);
@@ -30,7 +30,7 @@ const MainJobPage = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        `http://localhost:3000/api/users/getusers?page=${currentPage}&limit=${limit}`
+        `https://hiret-ltd.onrender.com/api/users/getusers?page=${currentPage}&limit=${limit}`
       );
       setUsers(response.data);
     }
